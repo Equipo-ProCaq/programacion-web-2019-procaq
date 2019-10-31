@@ -1,0 +1,10 @@
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    height: 300%;
+    width: 25%;
+    display: grid;
+}
