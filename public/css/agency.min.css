@@ -8,11 +8,6 @@
         overflow-x: hidden;
         font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
     }
-    
-    .etiketaproucto{
-      display: inline-block;
-
-    }
 
     .titulocategoria1 {
         text-align: center; 
@@ -315,11 +310,30 @@
     
     #portfolio .portfolio-item .portfolio-caption {
         max-width: 400px;
-        margin: 0 auto;
-        padding: 25px;
+        margin: 0.5%;
+        padding: 20px;
         text-align: center;
-        background-color: #fff
+        background: rgba(3, 6, 207, 20%);
+        border-radius: 26px 26px 26px 26px;
+        color: black;
     }
+    
+        
+    
+    #portfolio .portfolio-item .img-fluid {
+        border-radius: 15px 15px 15px 15px;
+        
+    }
+
+    #portfolio .portfolio-item .input100 {
+        border-radius: 9px 9px 9px 9px;
+    }
+
+    #portfolio .portfolio-item .btn-success {
+        padding: 0%;
+        border-radius: 3px 3px 3px 3Spx;
+    }
+
     
     #portfolio .portfolio-item .portfolio-caption h4 {
         margin: 0;
