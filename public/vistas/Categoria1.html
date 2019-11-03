@@ -24,11 +24,12 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
         <div class="container">
+
             <a class="navbar-brand js-scroll-trigger" href="../index.html"><i class="fa fa-home"></i> ProCaq</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
-                
+
                 <i class="fas fa-bars"></i>
             </button>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -42,12 +43,13 @@
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item">
                         <button type="button" class="btn btn-success">
-                            <a  class="nav-link js-scroll-trigger" href="C:\Users\Yenny Thalia\Documents\INGENIERIA DE SISTEMAS (UDLA)\Sexto Semestre\Programación Web\programacion-web-2019-procaq\public\vistas\PedidoCarrito.html">
+                            <a class="nav-link js-scroll-trigger"
+                                href="C:\Users\Yenny Thalia\Documents\INGENIERIA DE SISTEMAS (UDLA)\Sexto Semestre\Programación Web\programacion-web-2019-procaq\public\vistas\PedidoCarrito.html">
                                 Ir al carrito <i class="fas fa-cart-arrow-down"></i> </a>
                         </button>
-                        
+
                     </li>
-                   
+
                 </ul>
             </div>
         </div>
@@ -65,11 +67,6 @@
                     <br>
                 </div>
             </div>
-           
-            <button type="button" class="btn btn-success" >
-                <a  class="nav-link js-scroll-trigger" href="C:\Users\Yenny Thalia\Documents\INGENIERIA DE SISTEMAS (UDLA)\Sexto Semestre\Programación Web\programacion-web-2019-procaq\public\vistas\inventario.html">
-                    <i class="fas fa-arrow-alt-circle-left"></i> Atras</a>
-            </button>
 
             <br>
             <hr>
@@ -83,23 +80,26 @@
                 <div class="col-md-4 col-sm-6 portfolio-item">
 
                     <img class="img-fluid" src="../img/portfolio/Suavisante1litro.jpeg" alt="">
-    
+
                     <div class="portfolio-caption">
-                        <h6 class="etiketaproducto">Suavizante - Procaq (1 litro)</h6>
-                        <i>Precio: </i>
-                        <u>$3'500</u>
-                        <select class="input100">
+                        <h6 id="NombreSuavisante">Suavizante - Procaq</h6>
+                        <h6 id="NombreUnidad">1 litro</h6>
+                        <i>Precio: $</i>
+                        <u id="PrecioSuavisante1litro">3500</u>
+                        <select id="AromaSuavisante1litro" class="input100">
                             <option>AROMAS:</option>
                             <option>Canela</option>
                             <option>Limon</option>
                             <option>Chicle</option>
                         </select>
-                        <input id="documento" min="1" class="input100" type="number" name="documento" placeholder="Cantidad">
-                        <button type="button" class="btn btn-success">Add
+                        <input id="CantidadSuavisante1" min="1" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
+                        <button onclick="guardarPedido()" type="button" class="btn btn-success" id="AgregarAlPedido">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
 
                     </div>
+
                 </div>
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -117,7 +117,8 @@
                             <option>Limon</option>
                             <option>Chicle</option>
                         </select>
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -140,7 +141,8 @@
                             <option>Limon</option>
                             <option>Chicle</option>
                         </select>
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -163,7 +165,8 @@
                             <option>Limon</option>
                             <option>Chicle</option>
                         </select>
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -195,7 +198,8 @@
                             <option>Limon</option>
                             <option>Chicle</option>
                         </select>
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -219,7 +223,8 @@
                             <option>Chicle</option>
                         </select>
 
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -242,7 +247,8 @@
                             <option>Limon</option>
                             <option>Chicle</option>
                         </select>
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -265,7 +271,8 @@
                             <option>Limon</option>
                             <option>Chicle</option>
                         </select>
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -288,7 +295,8 @@
                             <option>Limon</option>
                             <option>Chicle</option>
                         </select>
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -323,7 +331,8 @@
                             <option>Chicle</option>
                             <option>Pino</option>
                         </select>
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -347,7 +356,8 @@
                             <option>Chicle</option>
                             <option>Pino</option>
                         </select>
-                        <input  min="1"id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -371,7 +381,8 @@
                             <option>Chicle</option>
                             <option>Pino</option>
                         </select>
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -395,7 +406,8 @@
                             <option>Chicle</option>
                             <option>Pino</option>
                         </select>
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -420,7 +432,8 @@
                             <option>Chicle</option>
                             <option>Pino</option>
                         </select>
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -457,7 +470,8 @@
                             <option>Chicle</option>
                             <option>Pino</option>
                         </select>
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -481,7 +495,8 @@
                             <option>Chicle</option>
                             <option>Pino</option>
                         </select>
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -507,7 +522,8 @@
                             <option>Pino</option>
                         </select>
 
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -535,7 +551,8 @@
                         <i>Precio: </i>
                         <u>$3'500</u>
 
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -552,7 +569,8 @@
                         <i>Precio: </i>
                         <u>$3'500</u>
 
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -568,7 +586,7 @@
             <hr>
             <br>
             <br>
-            
+
             <div class="row">
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -580,7 +598,8 @@
                         <i>Precio: </i>
                         <u>$3'500</u>
 
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -597,7 +616,8 @@
                         <i>Precio: </i>
                         <u>$3'500</u>
 
-                        <input min="1" id="documento" class="input100" type="number" name="documento" placeholder="Cantidad">
+                        <input min="1" id="documento" class="input100" type="number" name="documento"
+                            placeholder="Cantidad">
                         <button type="button" class="btn btn-success">Add
                             <i class="fas fa-dolly" width="32" height="32"></i>
                         </button>
@@ -646,6 +666,14 @@
             </div>
         </div>
     </footer>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.2.3/firebase-app.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+    <script src="../js/enlace.js"></script>
 
 </body>
 

@@ -35,7 +35,11 @@
         text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
     }
 
-
+    .BotonAtras{
+        background: rgb(14, 168, 47);
+        border-radius: 8px 8px 8px 8px;
+        color: white;
+    }
 
     p {
         line-height: 1.75
