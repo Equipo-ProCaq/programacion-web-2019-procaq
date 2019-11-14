@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
         <div class="container">
 
-            <a class="navbar-brand js-scroll-trigger" href="../index.html"><i class="fa fa-home"></i> ProCaq</a>
+            <a class="navbar-brand js-scroll-trigger" href="../vistas/inicio.html"><i class="fa fa-home"></i> ProCaq</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -83,10 +83,13 @@
                     <img class="img-fluid" src="../img/portfolio/Suavisante1litro.jpeg" alt="">
 
                     <div class="portfolio-caption">
-                        <h6 id="NombreSuavisante" name="Suavizante - Procaq">Suavizante - Procaq</h6>
-                        <h6 id="NombreUnidad" name="1 litro">1 litro</h6>
+
+                        <h6 id="NombreSuavisante" class="EtiketaBloquePrecio">Suavizante - Procaq </h6>
+                        <h6 id="NombreUnidad" class="EtiketaBloquePrecio">(1 litro)</h6>
+                        <br>
                         <i>Precio: $</i>
-                        <h6 id="PrecioSuavisante1litro" name="3500">3500</h6>
+                        <h6 id="PrecioSuavisante1litro" class="EtiketaBloquePrecio">3500</h6>
+
                         <select id="AromaSuavisante1litro"  onchange="ShowSelected();" class="input100">
                             <option>AROMAS:</option>
                             <option>Canela</option>
@@ -672,11 +675,12 @@
 
 
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js"></script>
 
 <script src="../js/enlace.js"></script>
+
 </body>
 
 </html>
