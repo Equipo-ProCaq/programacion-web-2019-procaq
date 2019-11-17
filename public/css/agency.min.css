@@ -129,9 +129,12 @@
     
     .btn-primary {
         background-color: #fed136;
-        border-color: #fed136
+        border-color: #fed136;
+        
     }
-    
+    a{
+        border-radius: 15px !important;
+      }
     .btn-primary:active,
     .btn-primary:focus,
     .btn-primary:hover {
@@ -139,6 +142,7 @@
         border-color: #fec810!important;
         color: #fff
     }
+    
     
     .btn-primary:active,
     .btn-primary:focus {
