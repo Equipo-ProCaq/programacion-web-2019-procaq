@@ -10,7 +10,7 @@ function loggeo() {
     console.log(doc.value);
     if (doc.value == "1" && pass.value == "admin") {
         window.location.href = '../vistas/inicio.html';
-    } else { alert('Documento o contraseña incorrectos\nPista: doc=1pass=admin'); }
+    } else { alert('Documento o contraseña incorrectos\nPista: doc=1 Y pass=admin'); }
 }
 
 function deshabilitaRetroceso(){
@@ -18,3 +18,7 @@ function deshabilitaRetroceso(){
     window.location.hash="Again-No-back-button" //chrome
     window.onhashchange=function(){window.location.hash="no-back-button";}
 }
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })

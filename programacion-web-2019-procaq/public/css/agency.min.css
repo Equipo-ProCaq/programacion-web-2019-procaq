@@ -8,7 +8,39 @@
         overflow-x: hidden;
         font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
     }
-    
+
+    .titulocategoria1 {
+        text-align: center; 
+        font-family: Arial Black; 
+        font-weight: bold; 
+        background: #313133; 
+        -webkit-background-clip: text; 
+        -moz-background-clip: text; 
+        background-clip: text; 
+        color: transparent; 
+        text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+    }
+
+
+
+    .subtitulocategoria1 {
+        text-align: left; 
+        font-family: Arial rgb(0, 0, 0); 
+        font-weight: bold; font-size: 20px; 
+        background: #000000; 
+        -webkit-background-clip: text; 
+        -moz-background-clip: text; 
+        background-clip: text; 
+        color: transparent; 
+        text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+    }
+
+    .BotonAtras{
+        background: rgb(14, 168, 47);
+        border-radius: 8px 8px 8px 8px;
+        color: white;
+    }
+
     p {
         line-height: 1.75
     }
@@ -35,6 +67,9 @@
         font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
     }
     
+    .EtiketaBloquePrecio{
+        display: inline-block;
+    }
     .page-section {
         padding: 100px 0
     }
@@ -94,9 +129,12 @@
     
     .btn-primary {
         background-color: #fed136;
-        border-color: #fed136
+        border-color: #fed136;
+        
     }
-    
+    a{
+        border-radius: 15px !important;
+      }
     .btn-primary:active,
     .btn-primary:focus,
     .btn-primary:hover {
@@ -104,6 +142,7 @@
         border-color: #fec810!important;
         color: #fff
     }
+    
     
     .btn-primary:active,
     .btn-primary:focus {
@@ -282,11 +321,29 @@
     
     #portfolio .portfolio-item .portfolio-caption {
         max-width: 400px;
-        margin: 0 auto;
-        padding: 25px;
+        margin: 0.5%;
+        padding: 20px;
         text-align: center;
-        background-color: #fff
+        background: rgba(3, 6, 207, 20%);
+        border-radius: 26px 26px 26px 26px;
+        color: black;
     }
+    
+        
+    
+    #portfolio .portfolio-item .img-fluid {
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    #portfolio .portfolio-item .input100 {
+        border-radius: 9px 9px 9px 9px;
+    }
+
+    #portfolio .portfolio-item .btn-success {
+        padding: 0%;
+        border-radius: 3px 3px 3px 3Spx;
+    }
+
     
     #portfolio .portfolio-item .portfolio-caption h4 {
         margin: 0;

@@ -1,10 +1,25 @@
-.content{
+body{
+    background-image: url("https://www.todoaseo.com/wp-content/uploads/2019/09/MONTAJE-PRODUCTOS-TDA-TODOS.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenido{
+    
     display: flex;
     justify-content: center;
+   
 }
 
 .formulario{
     height: 300%;
-    width: 25%;
+    padding: 3%;
+    margin: 1%;
+    width:40%;
     display: grid;
+    background: rgba(3, 6, 207, 84%);
+    color: white;
+    border-radius: 26px 26px 26px 26px;
+    
 }
+
