@@ -17,6 +17,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <!-- Custom styles for this template -->
     <link href="../css/agency.min.css" rel="stylesheet">
+    <link href="../css/Categoria1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
 
 </head>
@@ -78,19 +80,69 @@
 
             <div class="row">
 
-                <div class="col-md-4 col-sm-6 portfolio-item">
 
-                    <img class="img-fluid" src="../img/portfolio/Suavisante1litro.jpeg" alt="">
+                    <div class="bd-example">
+                            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                              <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                              </ol>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="../img/portfolio/Suavisante1litro.jpeg" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="colorh5">First slide label</h5>
+                                    <i>Precio: $</i>
+                                    <h5  class="EtiketaBloquePrecio">3500</h5>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="../img/portfolio/Sauvisante2litros.jpg" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="colorh5">Second slide label</h5>
+                                    <i>Precio: $</i>
+                                    <h5  class="EtiketaBloquePrecio">3500</h5>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="../img/portfolio/SuavisanteGalon.jpg" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="colorh5">Third slide label</h5>
+                                    <i>Precio: $</i>
+                                    <h5  class="EtiketaBloquePrecio">3500</h5>
+                                  </div>
+                                </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div>
+                 </div>
+
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
 
                     <div class="portfolio-caption">
 
                         <h6 id="NombreSuavisante" class="EtiketaBloquePrecio">Suavizante - Procaq </h6>
-                        <h6 id="NombreUnidad" class="EtiketaBloquePrecio">(1 litro)</h6>
-                        <br>
-                        <i>Precio: $</i>
-                        <h6 id="PrecioSuavisante1litro" class="EtiketaBloquePrecio">3500</h6>
+                        
+                        
+                        <select id="MedidaSuavisante"  onchange="ShowSelected1();" class="input100">
+                                <option>(Medidas)</option>
+                                <option>Medio litro</option>
+                                <option>Un litro</option>
+                                <option>Dos litros</option>
+                                <option>Galon</option>
+                                <option>Garrafa</option>
+                        </select>
 
-                        <select id="AromaSuavisante1litro"  onchange="ShowSelected();" class="input100">
+                        <select id="AromaSuavisante1litro"  onchange="ShowSelected2();" class="input100">
                             <option>AROMAS:</option>
                             <option>Canela</option>
                             <option>Limon</option>
@@ -107,84 +159,15 @@
 
                 </div>
 
-                <div class="col-md-4 col-sm-6 portfolio-item">
-
-                    <img class="img-fluid" src="../img/portfolio/Sauvisante2litros.jpg" alt="">
-
-                    <div class="portfolio-caption">
-                        <h6 class="etiketaproducto">Suavizante - Procaq (2 litros)</h6>
-                        <i>Precio: </i>
-                        <u>$7'000</u>
-
-                        <select class="input100">
-                            <option>AROMAS:</option>
-                            <option>Canela</option>
-                            <option>Limon</option>
-                            <option>Chicle</option>
-                        </select>
-                        <input min="1" id="documento" class="input100" type="number" name="documento"
-                            placeholder="Cantidad">
-                        <button type="button" class="btn btn-success">Add
-                            <i class="fas fa-dolly" width="32" height="32"></i>
-                        </button>
-
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6 portfolio-item">
-
-                    <img class="img-fluid" src="../img/portfolio/SuavisanteGalon.jpg" alt="">
-
-                    <div class="portfolio-caption">
-                        <h6 class="etiketaproducto">Suavizante - Procaq (Galón)</h6>
-                        <i>Precio: </i>
-                        <u>$14'000</u>
-
-                        <select class="input100">
-                            <option>AROMAS:</option>
-                            <option>Canela</option>
-                            <option>Limon</option>
-                            <option>Chicle</option>
-                        </select>
-                        <input min="1" id="documento" class="input100" type="number" name="documento"
-                            placeholder="Cantidad">
-                        <button type="button" class="btn btn-success">Add
-                            <i class="fas fa-dolly" width="32" height="32"></i>
-                        </button>
-
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6 portfolio-item">
-
-                    <img class="img-fluid" src="../img/portfolio/SuavisanteGarrafa.jpg" alt="">
-
-                    <div class="portfolio-caption">
-                        <h6 class="etiketaproducto">Suavizante - Procaq (Garrafa)</h6>
-                        <i>Precio: </i>
-                        <u>$30'000</u>
-
-                        <select class="input100">
-                            <option>AROMAS:</option>
-                            <option>Canela</option>
-                            <option>Limon</option>
-                            <option>Chicle</option>
-                        </select>
-                        <input min="1" id="documento" class="input100" type="number" name="documento"
-                            placeholder="Cantidad">
-                        <button type="button" class="btn btn-success">Add
-                            <i class="fas fa-dolly" width="32" height="32"></i>
-                        </button>
-
-                    </div>
-                </div>
+                
+               
 
 
             </div>
 
             <br>
             <hr>
-            <h3 class="subtitulocategoria1"> AMBIENTADORES: </h3> <!-- SUAVISANTES -->
+            <h3 class="subtitulocategoria1"> AMBIENTADORES: </h3> <!-- AMBIENTADORES -->
             <hr>
             <br>
             <br>
@@ -673,7 +656,9 @@
         </div>
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>

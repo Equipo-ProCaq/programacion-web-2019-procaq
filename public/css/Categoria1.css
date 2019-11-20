@@ -1,0 +1,41 @@
+
+.row{
+    display: inline-block;
+}
+.slide{
+    width: 50%;
+    height: 20%;
+   
+   
+}
+
+.bd-example{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.carousel-inner{
+    border-radius: 50px;
+    
+}
+
+.d-md-block{
+    background: rgb(black, black, black,20%);
+}
+
+.portfolio-item{
+    display: inline-block;
+}
+
+
+.portfolio-caption{
+    display: inline-block;
+}
+
+.colorh5{
+    color: black;
+}
+
+

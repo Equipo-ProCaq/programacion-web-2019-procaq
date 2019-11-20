@@ -19,17 +19,37 @@ var db = firebase.firestore();
 
 //Definimos variables para los label
 var NombreSuavisante1 = document.getElementById('NombreSuavisante');
-var MedidaSuavisante1 = document.getElementById('NombreUnidad');
-var PrecioSuavisante1 = document.getElementById('PrecioSuavisante1litro');
+var PrecioSuavisante1;
 
-//Definimos la variable para el select d aromas
+//Definimos la variable para el select de medidas y aromas
+var medida;
 var aroma;
 
 //Definimos la variable para el input de cantidad
 var CantidadSuavisante1 = document.getElementById('CantidadSuavisante1');
 
-//Metodo para el select
-function ShowSelected()
+//Metodos para los select de unidad y aroma
+function ShowSelected1()
+{
+  var MedidaSuavisante1 = document.getElementById("MedidaSuavisante");
+  medida = MedidaSuavisante1.options[MedidaSuavisante1.selectedIndex].text;
+  
+  if (medida == "Un litro" ){
+    
+    PrecioSuavisante1=3500;
+    alert("que pasó");
+  }else if (medida == "Dos litros" ){
+    PrecioSuavisante1=13500;
+  }else if (medida== "(Galon)" ){
+    PrecioSuavisante1=20500;
+  }else if (medida == "(Garrafa)" ){
+    PrecioSuavisante1=50000;
+  }else if (medida == "(Medio litro)" ){
+    PrecioSuavisante1=2500;
+  }
+}
+
+function ShowSelected2()
 {
   var AromaSuavisante1 = document.getElementById("AromaSuavisante1litro");
   aroma = AromaSuavisante1.options[AromaSuavisante1.selectedIndex].text;
@@ -40,8 +60,8 @@ function ShowSelected()
 function guardarPedido() {
   
     db.collection("DatosDeCompra").add({
-        ValorUnitario: PrecioSuavisante1.innerHTML,
-        Medida: MedidaSuavisante1.innerHTML,
+        ValorUnitario: PrecioSuavisante1,
+        Medida: medida,
         NombreProducto: NombreSuavisante1.innerHTML,
         Aroma: aroma,
         Cantidad: CantidadSuavisante1.value
