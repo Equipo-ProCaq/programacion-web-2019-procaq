@@ -69,6 +69,10 @@
     
     .EtiketaBloquePrecio{
         display: inline-block;
+        text-align: initial;
+        font-family: 'Times New Roman', Times, serif; 
+
+        text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
     }
     .page-section {
         padding: 100px 0
@@ -128,6 +132,7 @@
     }
     
     .btn-primary {
+        width: 50%;
         background-color: #fed136;
         border-color: #fed136;
         
@@ -177,7 +182,7 @@
     }
     
     #mainNav .navbar-nav .nav-item .nav-link {
-        font-size: 90%;
+        font-size: 70%;
         font-weight: 400;
         padding: .75em 0;
         letter-spacing: 1px;
@@ -192,14 +197,14 @@
     
     @media (min-width:992px) {
         #mainNav {
-            padding-top: 25px;
-            padding-bottom: 25px;
+            padding-top: 3px;
+            padding-bottom: 5px;
             transition: padding-top .3s, padding-bottom .3s;
             border: none;
             background-color: transparent
         }
         #mainNav .navbar-brand {
-            font-size: 1.75em;
+            font-size: 1.5em;
             transition: all .3s
         }
         #mainNav .navbar-nav .nav-item .nav-link {
@@ -321,11 +326,11 @@
     
     #portfolio .portfolio-item .portfolio-caption {
         max-width: 400px;
-        margin: 0.5%;
+        margin: 0%;
         padding: 20px;
         text-align: center;
         background: rgba(3, 6, 207, 20%);
-        border-radius: 26px 26px 26px 26px;
+        border-radius: 26px;
         color: black;
     }
     
@@ -335,12 +340,13 @@
         border-radius: 15px 15px 15px 15px;
     }
 
-    #portfolio .portfolio-item .input100 {
+    #portfolio .portfolio-item .
+     {
         border-radius: 9px 9px 9px 9px;
     }
 
     #portfolio .portfolio-item .btn-success {
-        padding: 0%;
+        padding: 2%;
         border-radius: 3px 3px 3px 3Spx;
     }
 
